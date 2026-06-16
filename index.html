@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ════════════════════════════════════════
+    📝 EDIT: Page title & description (SEO)
+  ════════════════════════════════════════ -->
+  <title>Shaik Dasthagiri — DevOps Engineer</title>
+  <meta name="description" content="DevOps Engineer with hands-on experience in Kubernetes, cloud infrastructure, CI/CD, and GitOps. Based in Bengaluru, India."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Your Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║            NAVIGATION                    ║
+     ╚══════════════════════════════════════════╝
+  📝 EDIT: Add/remove nav links here
+  Keep the id="nav" on the <nav> tag
+-->
+<nav id="nav">
+  <div class="nav-logo">
+    <span class="grn">~</span>/<span class="pri">shaik</span>
+  </div>
+
+  <!-- Desktop links -->
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#beyond">Ventures</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+
+  <!-- Mobile hamburger -->
+  <button class="nav-ham" id="nav-ham" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav-drawer" id="nav-drawer">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#beyond">Ventures</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║              HERO SECTION                ║
+     ╚══════════════════════════════════════════╝
+  📝 EDIT: Your name, role, terminal info lines,
+  and status pills are all here.
+  The typewriter phrases are in js/main.js → CONFIG
+-->
+<section id="hero">
+  <!-- Background layers (don't edit these) -->
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-glow3"></div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+
+      <!-- ── TERMINAL WINDOW ── -->
+      <div class="terminal">
+        <div class="t-bar">
+          <div class="t-dot r"></div>
+          <div class="t-dot y"></div>
+          <div class="t-dot g"></div>
+        </div>
+
+        <div class="t-body">
+          <!-- Command prompt line -->
+          <div class="t-prompt"><span class="t-sym">➜</span> ~ $ whoami</div>
+
+          <!-- 📝 EDIT: Your name below -->
+          <div class="t-name g-txt">Shaik Dasthagiri</div>
+
+          <!-- 📝 EDIT: Your title below -->
+          <div class="t-role">
+            <span class="hi">DevOps Engineer</span>
+            &nbsp;|&nbsp; Cloud &nbsp;|&nbsp; Kubernetes &nbsp;|&nbsp; CI/CD
+          </div>
+
+          <!-- 📝 EDIT: Your short description -->
+          <div class="t-desc">
+            Building, automating, and learning modern cloud infrastructure.<br>
+            Currently deep in Kubernetes, GitOps, and DevSecOps.
+          </div>
+
+          <!-- 📝 EDIT: Quick info lines -->
+          <div class="t-line"><span class="lv">$</span> <span class="val">location</span> &nbsp; <span class="val">Bengaluru, India</span></div>
+          <div class="t-line"><span class="lv">$</span> <span class="val">experience</span> &nbsp; <span class="val">~2 yrs (IT Admin + DevOps)</span></div>
+          <div class="t-line"><span class="lv">$</span> <span class="val">certs</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="val">CKA (in progress)</span></div>
+          <div class="t-line">
+            <span class="lv">$</span>
+            <span class="val">status</span> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="val-grn">open to opportunities</span>
+            <span class="cursor-blink"></span>
+          </div>
+        </div>
+      </div><!-- end .terminal -->
+
+      <!-- ── BUTTONS ── -->
+      <!-- 📝 EDIT: Button labels and links -->
+      <div class="hero-actions">
+        <a href="#projects"                                    class="btn-p">View Projects</a>
+        <a href="#contact"                                     class="btn-o">Get In Touch</a>
+        <a href="https://github.com/shaikDevOps01" target="_blank" rel="noopener" class="btn-o">GitHub ↗</a>
+        <a href="my-resume.pdf/Shaik_Dasthagiri_DevOps_Resume.pdf" class="btn-p" download>Download Resume</a>
+      </div>
+
+      <!-- ── STATUS PILLS ── -->
+      <!-- 📝 EDIT: Add/remove/change status pills -->
+      <div class="status-row">
+        <div class="spill open"><div class="sdot g"></div>Open to roles</div>
+        <div class="spill"><span>🎓</span> CKA Prep</div>
+        <div class="spill"><span>⚙️</span> Building GitOps Project</div>
+      </div>
+
+    </div><!-- end .hero-left -->
+
+    <!-- ── STAT CARDS (right side) ── -->
+    <!-- 📝 EDIT: Change the numbers and labels -->
+    <div class="hero-right">
+      <div class="stat-col">
+        <div class="stat-c">
+          <div class="stat-v g-txt-grn">↓60%</div>
+          <div class="stat-l">Faster<br>Deployments</div>
+        </div>
+        <div class="stat-c">
+          <div class="stat-v g-txt-grn">↑40%</div>
+          <div class="stat-l">Quicker Incident<br>Detection</div>
+        </div>
+        <div class="stat-c">
+          <div class="stat-v g-txt">2</div>
+          <div class="stat-l">Ventures<br>in Progress</div>
+        </div>
+        <div class="stat-c">
+          <div class="stat-v g-txt">3+</div>
+          <div class="stat-l">Industry<br>Events</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end .hero-inner -->
+</section>
+
+<hr class="div-line"/>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║              ABOUT SECTION               ║
+     ╚══════════════════════════════════════════╝
+  📝 EDIT: Your story paragraphs and the 4 fact cards
+-->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Left: Text -->
+      <div class="about-text fu">
+        <div class="s-eye">About Me</div>
+        <h2 class="s-title">Someone who is growing and building</h2>
+
+        <!-- 📝 EDIT: Quote -->
+        <div class="about-quote">
+          "I didn't come from a CS background. I came from business, got curious about how systems work, and started taking things apart."
+        </div>
+
+        <!-- 📝 EDIT: Your paragraphs -->
+        <p>
+          My path was <strong>BBA → IT Administration → DevOps Engineering</strong> — and that non-linear route gave me something useful: I understand how businesses and teams operate, not just how the tech works underneath them.
+        </p>
+        <p>
+          Right now I'm focused on going deeper — <strong>Kubernetes internals, GitOps patterns, DevSecOps practices</strong>, and understanding how to build cloud infrastructure that's actually production-grade, not just demo-ready.
+        </p>
+        <p>
+          Outside the day job I'm exploring <strong>AI tooling, startup ideas, and product building</strong>. I find it hard to stay in just one lane, which is probably both a strength and something I'm actively learning to manage.
+        </p>
+      </div>
+
+      <!-- Right: Fact cards -->
+      <!-- 📝 EDIT: Change icon, title, description for each card -->
+      <div class="fact-grid fu d1">
+
+        <div class="fact">
+          <div class="fact-ic fi-b">⚙️</div>
+          <div>
+            <div class="fact-t">Infrastructure & Systems</div>
+            <div class="fact-d">Linux, cloud, containers, orchestration — building reliable systems that stay up</div>
+          </div>
+        </div>
+
+        <div class="fact">
+          <div class="fact-ic fi-t">🔄</div>
+          <div>
+            <div class="fact-t">Automation Mindset</div>
+            <div class="fact-d">If I'm doing it twice, I automate it. CI/CD, IaC, and scripting are how I think</div>
+          </div>
+        </div>
+
+       <div class="fact">
+          <div class="fact-ic fi-a">🏢</div>
+          <div>
+            <div class="fact-t">Business Operations & Regulatory Compliance</div>
+            <div class="fact-d">Hands-on experience managing private limited company establishment processes, understanding required registrations and documentation, handling government-related procedures, ensuring compliance requirements, and coordinating with internal and external stakeholders</div>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="fact-ic fi-g">📈</div>
+          <div>
+            <div class="fact-t">Continuous Learner</div>
+            <div class="fact-d">Currently: CKA prep, GitOps multi-cluster architecture, DevSecOps patterns</div>
+          </div>
+        </div>
+
+        <div class="fact">
+          <div class="fact-ic fi-a">💡</div>
+          <div>
+            <div class="fact-t">Product Curiosity</div>
+            <div class="fact-d">Interested in AI, startups, and how technology creates real-world business value</div>
+          </div>
+        </div>
+      </div><!-- end .fact-grid -->
+    </div>
+  </div>
+</section>
+
+<hr class="div-line"/>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║             SKILLS SECTION               ║
+     ╚══════════════════════════════════════════╝
+  📝 EDIT: Add/remove .chip items inside any .sk-card
+  📝 EDIT: To add a new skill category, copy one .sk-card block
+-->
+<section id="skills">
+  <div class="container">
+    <div class="s-hdr fu">
+      <div class="s-eye">Technical Skills</div>
+      <h2 class="s-title">What I work with</h2>
+      <p class="s-sub">Grouped by area. These are tools I've used in real work, not just read about.</p>
+    </div>
+
+    <div class="skill-grid">
+
+      <!-- ── Cloud ── -->
+      <div class="sk-card fu">
+        <div class="sk-label">Cloud</div>
+        <h3>Cloud Platforms</h3>
+        <div class="chips">
+          <span class="chip">AWS EC2</span>
+          <span class="chip">AWS EKS</span>
+          <span class="chip">AWS S3</span>
+          <span class="chip">AWS VPC</span>
+          <span class="chip">GCP GKE</span>
+          <span class="chip">IAM</span>
+        </div>
+      </div>
+
+      <!-- ── Containers ── -->
+      <div class="sk-card fu d1">
+        <div class="sk-label">Containers</div>
+        <h3>Orchestration</h3>
+        <div class="chips">
+          <span class="chip">Docker</span>
+          <span class="chip">Kubernetes</span>
+          <span class="chip">Helm</span>
+          <span class="chip">kubectl</span>
+          <span class="chip">k3d</span>
+          <span class="chip">Kustomize</span>
+        </div>
+      </div>
+
+      <!-- ── CI/CD & GitOps ── -->
+      <div class="sk-card fu d2">
+        <div class="sk-label">CI/CD & GitOps</div>
+        <h3>Delivery Pipelines</h3>
+        <div class="chips">
+          <span class="chip">GitHub Actions</span>
+          <span class="chip">Jenkins</span>
+          <span class="chip">ArgoCD</span>
+          <span class="chip">GitOps</span>
+          <span class="chip">Kustomize</span>
+        </div>
+      </div>
+
+      <!-- ── IaC ── -->
+      <div class="sk-card fu d3">
+        <div class="sk-label">Infrastructure as Code</div>
+        <h3>Provisioning</h3>
+        <div class="chips">
+          <span class="chip">Terraform</span>
+          <span class="chip">Ansible</span>
+          <span class="chip">Bash</span>
+          <span class="chip">Python</span>
+        </div>
+      </div>
+
+      <!-- ── Monitoring ── -->
+      <div class="sk-card fu">
+        <div class="sk-label">Monitoring</div>
+        <h3>Observability</h3>
+        <div class="chips">
+          <span class="chip">Prometheus</span>
+          <span class="chip">Grafana</span>
+          <span class="chip">Elasticsearch</span>
+          <span class="chip">Logstash</span>
+          <span class="chip">Kibana</span>
+          <span class="chip">Alertmanager</span>
+        </div>
+      </div>
+
+      <!-- ── Security ── -->
+      <div class="sk-card fu d1">
+        <div class="sk-label">Security</div>
+        <h3>DevSecOps</h3>
+        <div class="chips">
+          <span class="chip">Trivy</span>
+          <span class="chip">RBAC</span>
+          <span class="chip">Network Policies</span>
+          <span class="chip">Ext. Secrets Op.</span>
+          <span class="chip">SAST Basics</span>
+        </div>
+      </div>
+
+      <!-- ── Networking ── -->
+      <div class="sk-card fu d2">
+        <div class="sk-label">Networking & OS</div>
+        <h3>Systems Foundation</h3>
+        <div class="chips">
+          <span class="chip">Linux</span>
+          <span class="chip">DNS</span>
+          <span class="chip">VPN</span>
+          <span class="chip">NAT</span>
+          <span class="chip">Firewalls</span>
+          <span class="chip">Backup & DR</span>
+        </div>
+      </div>
+
+      <!-- ── Scripting ── -->
+      <div class="sk-card fu d3">
+        <div class="sk-label">Programming & Automation</div>
+        <h3>Scripting</h3>
+        <div class="chips">
+          <span class="chip">Bash</span>
+          <span class="chip">Python</span>
+          <span class="chip">YAML</span>
+          <span class="chip">HCL (Terraform)</span>
+          <span class="chip">Makefile</span>
+        </div>
+      </div>
+
+    </div><!-- end .skill-grid -->
+
+    <!-- ── AI Force Multipliers (your section, preserved & upgraded) ── -->
+    <!-- 📝 EDIT: Add/remove AI tools in .chips below -->
+    <div class="ai-card fu">
+      <div class="sk-label">AI Force Multipliers</div>
+      <h3>How I 10× my output</h3>
+      <p>
+        AI tools aren't shortcuts in my workflow — they're leverage. I use them to prototype faster,
+        debug smarter, understand architecture more deeply, and convert ideas into working systems
+        without waiting for a full team. This is the new baseline for a Technology Operator.
+      </p>
+      <div class="chips">
+        <span class="chip ai-chip">Claude (Anthropic)</span>
+        <span class="chip ai-chip">GitHub Copilot</span>
+        <span class="chip ai-chip">ChatGPT</span>
+        <span class="chip ai-chip">DeepSeek</span>
+        <span class="chip ai-chip">Harness AI</span>
+        <span class="chip ai-chip">DataDog AI</span>
+        <span class="chip ai-chip">Claude Code</span>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="div-line"/>
+
+ 
+     <!-- ╔══════════════════════════════════════════╗
+     ║             PROJECTS SECTION             ║
+     ╚══════════════════════════════════════════╝
+    
+  📝 HOW TO ADD A NEW PROJECT:
+  1. Copy a complete .pc block (from <!-- Project X -->
+  <!-- 2. Paste it before the Placeholder comment
+  3. Update: pc-name, pc-problem, chips, pc-learns, pc-gh link
+  4. Change pc-status class to "done" or "wip"  -->
+<section id="projects">
+  <div class="container">
+
+    <div class="proj-intro fu">
+      <div>
+        <div class="s-eye">Projects</div>
+        <h2 class="s-title">Things I'm building</h2>
+        <p class="s-sub">Real-world projects. Each one chosen to solve an actual engineering problem.</p>
+      </div>
+      <!-- 📝 EDIT: Your GitHub profile URL -->
+      <a href="https://github.com/shaikDevOps01" class="btn-teal" target="_blank" rel="noopener">
+        All on GitHub ↗
+      </a>
+    </div>
+
+    <div class="proj-grid">
+
+      <!-- ══ PROJECT 1 ══ -->
+      <!-- 📝 EDIT: Change name, description, chips, learnings, link -->
+      <div class="pc fu">
+        <div class="pc-head">
+          <div class="pc-name">Kubernetes End-to-End DevOps Platform</div>
+          <div class="pc-status done"><div class="s2"></div>Completed</div>
+        </div>
+
+        <p class="pc-problem">
+          Built a production-style Kubernetes platform from scratch — covering containerization,
+          CI/CD pipelines, monitoring, and deployment automation for a sample eCommerce app (KubeShop).
+        </p>
+
+        <div class="pc-tech">
+          <span class="chip">Kubernetes</span>
+          <span class="chip">Docker</span>
+          <span class="chip">GitHub Actions</span>
+          <span class="chip">Helm</span>
+          <span class="chip">Prometheus</span>
+          <span class="chip">Grafana</span>
+          <span class="chip">ELK</span>
+        </div>
+
+        <div class="pc-learns">
+          <div class="pc-learns-title">Key Learnings</div>
+          <ul>
+            <li>Designing multi-environment deployment pipelines with rollback strategy</li>
+            <li>Prometheus alerting rules and Grafana dashboard design from scratch</li>
+            <li>Namespace-level resource isolation and RBAC configuration</li>
+          </ul>
+        </div>
+
+        <div class="pc-footer">
+          <a href="https://github.com/shaikDevOps01" class="pc-gh" target="_blank" rel="noopener">
+            🐙 View on GitHub ↗
+          </a>
+          <span class="tag">KubeShop</span>
+        </div>
+      </div>
+
+      <!-- ══ PROJECT 2 ══ -->
+      <div class="pc fu d1">
+        <div class="pc-head">
+          <div class="pc-name">Multi-Cluster GitOps Control Plane</div>
+          <div class="pc-status wip"><div class="s2"></div>In Progress</div>
+        </div>
+
+        <p class="pc-problem">
+          Implementing a hub-and-spoke ArgoCD architecture that manages multiple Kubernetes clusters
+          from a single control plane — the pattern used in real enterprise environments.
+        </p>
+
+        <div class="pc-tech">
+          <span class="chip">ArgoCD</span>
+          <span class="chip">ApplicationSets</span>
+          <span class="chip">AWS EKS</span>
+          <span class="chip">Terraform</span>
+          <span class="chip">k3d</span>
+          <span class="chip">Kustomize</span>
+          <span class="chip">Trivy</span>
+          <span class="chip">Ext. Secrets</span>
+        </div>
+
+        <div class="pc-learns">
+          <div class="pc-learns-title">Key Learnings</div>
+          <ul>
+            <li>Hub-and-spoke vs flat ArgoCD — when and why each model is chosen</li>
+            <li>ApplicationSet generators for environment-based cluster targeting</li>
+            <li>Secret management across cluster boundaries with ESO</li>
+          </ul>
+        </div>
+
+        <div class="pc-footer">
+          <a href="https://github.com/shaikDevOps01" class="pc-gh" target="_blank" rel="noopener">
+            🐙 View on GitHub ↗
+          </a>
+          <span class="tag">Active Build</span>
+        </div>
+      </div>
+
+      <!-- ══ ADD YOUR NEXT PROJECT HERE ══
+      <div class="pc fu d2">
+        <div class="pc-head">
+          <div class="pc-name">Your Project Name</div>
+          <div class="pc-status wip"><div class="s2"></div>In Progress</div>
+        </div>
+        <p class="pc-problem">Short problem statement here.</p>
+        <div class="pc-tech">
+          <span class="chip">Tool1</span>
+          <span class="chip">Tool2</span>
+        </div>
+        <div class="pc-learns">
+          <div class="pc-learns-title">Key Learnings</div>
+          <ul>
+            <li>Learning point 1</li>
+            <li>Learning point 2</li>
+          </ul>
+        </div>
+        <div class="pc-footer">
+          <a href="YOUR_GITHUB_LINK" class="pc-gh" target="_blank">🐙 View on GitHub ↗</a>
+          <span class="tag">Tag</span>
+        </div>
+      </div>
+      ══════════════════════════════════════ -->
+
+      <!-- Placeholder cards (will disappear as you add real projects) -->
+      <div class="proj-add fu d2">
+        <div class="proj-add-icon">＋</div>
+        <div class="proj-add-txt">Next project slot<br>DevSecOps / AI / Platform Engineering</div>
+      </div>
+
+      <div class="proj-add fu d3">
+        <div class="proj-add-icon">＋</div>
+        <div class="proj-add-txt">Future project slot<br>Cloud Architecture / Automation</div>
+      </div>
+
+    </div><!-- end .proj-grid -->
+  </div>
+</section>
+
+<hr class="div-line"/>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║            EXPERIENCE SECTION            ║
+     ╚══════════════════════════════════════════╝
+  📝 EDIT: Update dates, role, company, bullet points
+  📝 EDIT: To add a new role, copy one .exp-card block
+-->
+<section id="experience">
+  <div class="container">
+    <div class="s-hdr fu">
+      <div class="s-eye">Experience</div>
+      <h2 class="s-title">Work history</h2>
+      <p class="s-sub">Same company, different hats — started in IT ops, moved into DevOps as the team and my skills grew.</p>
+    </div>
+
+    <div class="exp-grid">
+
+      <!-- ══ CURRENT ROLE ══ -->
+      <div class="exp-card fu">
+        <div class="exp-badge cur">Current</div>
+
+        <!-- 📝 EDIT: Dates, role, company -->
+        <div class="exp-period">2024 – Present</div>
+        <div class="exp-role">DevOps Engineer</div>
+        <div class="exp-co">Travercel Technologies · Bengaluru</div>
+
+        <!-- 📝 EDIT: Bullet points — keep impact-focused -->
+        <ul class="exp-list">
+          <li>Managing Kubernetes clusters and container workloads across AWS and GCP environments</li>
+          <li>Built and maintained CI/CD pipelines using GitHub Actions and Jenkins — reduced deployment cycle time by ~60%</li>
+          <li>Set up observability stack (Prometheus, Grafana, ELK) and alerting rules — improved incident detection speed by ~40%</li>
+          <li>Implemented GitOps workflows with ArgoCD and Kustomize for multi-environment deployments</li>
+          <li>Introduced Trivy image scanning and External Secrets Operator as part of a DevSecOps initiative</li>
+          <li>Wrote Terraform modules for infrastructure provisioning on AWS EKS</li>
+        </ul>
+
+        <!-- 📝 EDIT: Tags for this role -->
+        <div class="exp-tags">
+          <span class="tag">Kubernetes</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">ArgoCD</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">AWS</span>
+          <span class="tag">GCP</span>
+        </div>
+      </div>
+
+      <!-- ══ PREVIOUS ROLE ══ -->
+      <div class="exp-card fu d1">
+        <div class="exp-badge">Previous</div>
+
+        <div class="exp-period">2022 – 2024</div>
+        <div class="exp-role">IT Administrator</div>
+        <div class="exp-co">Travercel Technologies · Bengaluru</div>
+
+        <ul class="exp-list">
+          <li>Managed Linux and Windows server environments for day-to-day operations and uptime</li>
+          <li>Configured DNS, VPN, NAT, and firewall rules for internal and remote-access networking</li>
+          <li>Designed and maintained backup and disaster recovery procedures</li>
+          <li>Began automating repetitive admin tasks using Bash and Python scripts</li>
+          <li>Coordinated with vendors, business stakeholders, and cross-functional teams</li>
+        </ul>
+
+        <div class="exp-tags">
+          <span class="tag">Linux</span>
+          <span class="tag">DNS / VPN</span>
+          <span class="tag">Firewalls</span>
+          <span class="tag">Backup & DR</span>
+          <span class="tag">Bash</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+
+    </div><!-- end .exp-grid -->
+  </div>
+</section>
+
+<hr class="div-line"/>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║          BEYOND TECHNOLOGY               ║
+     ╚══════════════════════════════════════════╝
+  📝 EDIT: The 4 cards and the venture badges below
+-->
+<section id="beyond">
+  <div class="container">
+    <div class="s-hdr fu">
+      <div class="s-eye">Beyond Technology</div>
+      <h2 class="s-title">The rest of the picture</h2>
+      <p class="s-sub">Small section. Included because these things genuinely shape how I think about engineering and products.</p>
+    </div>
+    <div class="love-box">
+  ✨ Built by me with love & curiosity ✨
+</div>
+    <!-- BIG BOX: spans width of 2 columns, holds both ventures -->
+<div class="venture-duo">
+  <div class="venture-card">
+    <span class="vc-dot vc-pri"></span>
+    <a href="https://fareflyers.com" target="_blank" rel="noopener noreferrer">FareFlyers.com ↗ </a>
+    <p class="venture-desc">FareFlyers is a travel payment-intelligence platform that helps travelers find the cheapest and smartest way to book flights. By comparing booking platforms, ticket prices, convenience fees, and payment offers, FareFlyers helps users choose the best option and save money on every trip.</p>
+  </div>
+  <div class="venture-card">
+    <span class="vc-dot vc-tel"></span>
+    <a href="https://nextiqz.in"target="_blank" rel="noopener noreferrer">Nextiqz.in ↗</a>
+    <p class="venture-desc">NextIQz is a startup ecosystem platform that empowers entrepreneurs to turn ideas into successful businesses. From idea validation to scaling, we provide startup news, business insights, success stories, mentorship, team-building opportunities, collaborative communities, and learning resources to support founders at every stage of their entrepreneurial journey.</p>
+  </div>
+</div>
+    <!-- 📝 EDIT: Change icon, title, description for each card -->
+    <div class="beyond-grid">
+
+      <div class="bey fu">
+        <div class="bey-ic">🎤</div>
+        <h3>Industry Events</h3>
+        <p>Attended SmartTech Asia (Mumbai), Bharat Telecom (Delhi), and Global TiE Summit. Participated in tech showcases and product demonstrations.</p>
+      </div>
+
+      <div class="bey fu d1">
+        <div class="bey-ic">📡</div>
+        <h3>Telecom Domain</h3>
+        <p>Exposure to eSIM/eUICC, Smart Cards, OTA solutions, and embedded secure elements through work at Travercel Technologies.</p>
+      </div>
+
+      <div class="bey fu d2">
+        <div class="bey-ic">🧭</div>
+        <h3>Economics & AI</h3>
+        <p>Interested in how economic systems work, how AI changes product-building, and where cloud infrastructure fits in the next wave of tooling.</p>
+      </div>
+
+      <div class="bey fu d3">
+        <div class="bey-ic">🤝</div>
+        <h3>Business Background</h3>
+        <p>BBA degree means I can talk to non-technical stakeholders naturally. Business context behind engineering decisions matters to me.</p>
+      </div>
+
+    </div>
+
+    <!-- 📝 EDIT: Venture badges — add/remove as needed -->
+    <!-- <div class="venture-row fu">
+      <div class="venture">
+        <div class="vc-dot vc-pri"></div>
+        NextiQz Technologies
+      </div>
+      <div class="venture">
+        <div class="vc-dot vc-tel"></div>
+        FareFlyers — Travel Payment Intelligence
+      </div>
+    </div> -->
+
+  </div>
+</section>
+
+<hr class="div-line"/>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║             CONTACT SECTION              ║
+     ╚══════════════════════════════════════════╝
+  📝 EDIT: Your real links and what you're open to
+-->
+<section id="contact">
+  <div class="container">
+    <div class="ct-grid">
+
+      <!-- Left: text + links -->
+      <div class="ct-text fu">
+        <div class="s-eye">Contact</div>
+        <h2 class="s-title">Let's talk</h2>
+
+        <!-- 📝 EDIT: Your intro message -->
+        <p>
+          I'm currently open to DevOps and Platform Engineering roles in Bengaluru or remote.
+          If you have something that fits, reach out — I reply to genuine messages.
+        </p>
+
+        <!-- 📝 EDIT: Your real links below -->
+        <div class="ct-links">
+
+          <a href="https://github.com/shaikDevOps01" class="ct-link" target="_blank" rel="noopener">
+            <div class="ct-ic">🐙</div>
+            github.com/shaikDevOps01
+          </a>
+
+          <a href="https://linkedin.com/in/shaikdasthagiri" class="ct-link" target="_blank" rel="noopener">
+            <div class="ct-ic">💼</div>
+            linkedin.com/in/shaikdasthagiri
+          </a>
+
+          <!-- 📝 EDIT: Replace with your real email -->
+          <a href="mailto:shaik.dasthagiri124@gmail.com" class="ct-link">
+            <div class="ct-ic">✉️</div>
+            shaik.dasthagiri124@gmail.com
+          </a>
+
+          <span class="ct-link" style="cursor:default">
+            <div class="ct-ic">📍</div>
+            Bengaluru, Karnataka, India
+          </span>
+
+        </div>
+      </div><!-- end ct-text -->
+
+      <!-- Right: what you're open to -->
+      <div class="ct-right fu d1">
+        <h3>Open to conversations about</h3>
+
+        <!-- 📝 EDIT: Add/remove opportunity items -->
+        <div class="opp-item">
+          <div class="opp-d"></div>
+          <div>
+            <div class="opp-ti">DevOps / Platform Engineering Roles</div>
+            <div class="opp-de">Bengaluru or Remote · Product companies and Series A/B startups preferred</div>
+          </div>
+        </div>
+
+        <div class="opp-item">
+          <div class="opp-d"></div>
+          <div>
+            <div class="opp-ti">Cloud & Kubernetes Projects</div>
+            <div class="opp-de">Freelance or consulting work on infrastructure, CI/CD pipelines, or Kubernetes setup</div>
+          </div>
+        </div>
+
+        <div class="opp-item">
+          <div class="opp-d"></div>
+          <div>
+            <div class="opp-ti">Startup & Venture Conversations</div>
+            <div class="opp-de">FareFlyers, Nextiqz — open to advisors, collaborators, and people building interesting things</div>
+          </div>
+        </div>
+
+        <div class="opp-item">
+          <div class="opp-d"></div>
+          <div>
+            <div class="opp-ti">Mentorship & Knowledge Exchange</div>
+            <div class="opp-de">Always want to learn from engineers and founders who've built at scale</div>
+          </div>
+        </div>
+
+      </div><!-- end ct-right -->
+    </div>
+  </div>
+</section>
+
+
+<!-- ─────────────────── FOOTER ─────────────────── -->
+<!-- 📝 EDIT: Your name and year -->
+<footer>
+  <div class="foot-l"><span class="grn">~</span>/shaik · DevOps Engineer</div>
+  <div class="foot-r">Built with care · Bengaluru, India · 2026</div>
+</footer>
+
+
+<!-- Your JavaScript -->
+<script src="main.js"></script>
+</body>
+</html>
